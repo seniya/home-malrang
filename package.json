@@ -8,7 +8,7 @@
     "start": "pnpm --stream -r start",
     "dev": "pnpm --parallel --stream -r run dev",
     "build": "pnpm --stream -r run build",
-    "clean": "rm -rf .parcel-cache && pnpm -r run clean"
+    "clean": "rm -rf node_modules .parcel-cache && pnpm -r run clean"
   },
   "keywords": [],
   "author": "",

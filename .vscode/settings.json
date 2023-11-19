@@ -1,0 +1,19 @@
+{
+  "files.eol": "\n",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.eslint": true
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.format.enable": true,
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 100,
+}
