@@ -1,0 +1,26 @@
+{
+  "name": "@openobject/eslint-config-custom",
+  "displayName": "@openobject/eslint-config-custom",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf .turbo dist node_modules"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@vue/eslint-config-standard-with-typescript": "^8.0.0",
+    "eslint-plugin-vue": "^9.18.1"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.26.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
