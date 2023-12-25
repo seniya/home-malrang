@@ -45,7 +45,7 @@
             <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
               <div class="flex items-center justify-between">
                 <span class="font-light text-gray-600">Jun 1, 2020</span
-                ><a href="#" class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">Laravel</a>
+                ><a class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">Laravel</a>
               </div>
               <div class="mt-2">
                 <a href="#" class="text-2xl font-bold text-gray-700 hover:underline"
@@ -295,9 +295,15 @@
             <h1 class="mb-4 text-xl font-bold text-gray-700">Categories</h1>
             <div class="flex flex-col max-w-sm px-4 py-6 mx-auto bg-white rounded-lg shadow-md">
               <ul>
-                <li><a href="#" class="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline">- AWS</a></li>
+                <li>
+                  <a @click="onClickTest1" class="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                    >- AWS</a
+                  >
+                </li>
                 <li class="mt-2">
-                  <a href="#" class="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline">- Laravel</a>
+                  <a @click="onClickTest2" class="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                    >- Laravel</a
+                  >
                 </li>
                 <li class="mt-2">
                   <a href="#" class="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline">- Vue</a>
@@ -369,7 +375,17 @@
 </template>
 
 <script setup lang="ts">
-import mainContainer from '@/views/_container.vue'
+// import mainContainer from '@/views/_container.vue'
+import axios from 'axios'
+
+const onClickTest1 = () => {
+  console.log('onClickTest1')
+  axios.get('http://192.168.0.22:33000/users')
+}
+const onClickTest2 = () => {
+  console.log('onClickTest2')
+  axios.get('/api/users')
+}
 </script>
 
 <style scoped></style>
