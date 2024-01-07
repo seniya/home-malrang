@@ -1,13 +1,11 @@
 import { Exclude } from 'class-transformer';
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity } from 'typeorm';
+import { CommonEntity } from '../common/common.entity';
 // import { OneToMany } from 'typeorm';
 // import Post from '../posts/post.entity';
 
-@Entity()
-class User {
-  @PrimaryGeneratedColumn()
-  public id: number;
-
+@Entity({ name: 'user' })
+export class UserEntity extends CommonEntity {
   @Column({ unique: true })
   public email: string;
 
@@ -33,5 +31,3 @@ class User {
   // @OneToMany(() => Post, (post: Post) => post.author)
   // public posts?: Post[];
 }
-
-export default User;
