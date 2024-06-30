@@ -11,6 +11,6 @@
     "clean": "pnpm -r run clean"
   },
   "keywords": [],
-  "author": "Leamsigc",
+  "author": "malrang",
   "license": "ISC"
 }
