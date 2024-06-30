@@ -1,0 +1,16 @@
+{
+  "name": "main-repo",
+  "version": "1.0.0",
+  "description": "Basic template for a monorepo",
+  "scripts": {
+    "packages": "pnpm --filter",
+    "app": "pnpm packages main-app",
+    "start": "pnpm --stream -r run dev",
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "clean": "pnpm -r run clean"
+  },
+  "keywords": [],
+  "author": "Leamsigc",
+  "license": "ISC"
+}
