@@ -1,15 +1,10 @@
 <template>
-  <div>
-    <p>Page visits: {{ count }}</p>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-const { data: count } = await useFetch('/api/count')
-
 useHead({
   title: 'My App',
   meta: [

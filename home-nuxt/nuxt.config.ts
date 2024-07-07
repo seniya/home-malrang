@@ -9,7 +9,30 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' }
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint'],
+  css: ['@/assets/custom.scss'],
+  modules: ['@nuxt/eslint', 'nuxt-quasar-ui', "@nuxtjs/supabase"],
+  quasar: {
+    lang: 'ko-KR',
+    plugins: [
+      'BottomSheet',
+      'Dialog',
+      'Loading',
+      'LoadingBar',
+      'Notify',
+      'Dark'
+    ],
+    extras: {
+      font: 'roboto-font',
+      fontIcons: ['material-icons']
+    },
+    components: {
+      defaults: {
+        QBtn: {
+          unelevated: true
+        }
+      }
+    }
+  },
   eslint: {
     config: {
       stylistic: {
