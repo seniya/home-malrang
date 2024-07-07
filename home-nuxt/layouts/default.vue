@@ -65,7 +65,7 @@
 
     <q-page-container>
       <q-page>
-        <router-view />
+        <NuxtPage />
       </q-page>
     </q-page-container>
 

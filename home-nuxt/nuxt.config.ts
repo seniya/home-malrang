@@ -8,9 +8,11 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' }
   },
+
   devtools: { enabled: true },
   css: ['@/assets/custom.scss'],
-  modules: ['@nuxt/eslint', 'nuxt-quasar-ui', "@nuxtjs/supabase"],
+  modules: ['@nuxt/eslint', 'nuxt-quasar-ui'],
+
   quasar: {
     lang: 'ko-KR',
     plugins: [
@@ -33,6 +35,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   eslint: {
     config: {
       stylistic: {
@@ -42,6 +45,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   runtimeConfig: {
     // The private keys which are only available server-side
     apiSecret: '123',
@@ -50,6 +54,7 @@ export default defineNuxtConfig({
       apiBase: '/api'
     }
   },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -58,5 +63,7 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+
+  compatibilityDate: '2024-07-07'
 })
