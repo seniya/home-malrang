@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  &__label {
+      color: #6d6d6d;
+  }
+}
