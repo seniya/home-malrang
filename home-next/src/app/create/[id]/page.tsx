@@ -42,46 +42,46 @@ function Page() {
 
     const insertRowData = async (contents: BoardContent[]) => {
         // Supabase 데이터베이스에 연동
-        if (boards?.contents) {
-            const { data, error, status } = await supabase.from("todos").update({ contents: contents }).eq("id", pathname.split("/")[2]).select();
+        // if (boards?.contents) {
+        //     // const { data, error, status } = await supabase.from("todos").update({ contents: contents }).eq("id", pathname.split("/")[2]).select();
 
-            console.log(status);
-            if (error) {
-                console.log(error);
-                toast({
-                    title: "에러가 발생했습니다.",
-                    description: "콘솔 창에 출력된 에러를 확인하세요.",
-                });
-            }
-            if (status === 200) {
-                toast({
-                    title: "추가 완료!",
-                    description: "새로운 TO DO BOARD가 추가 되었습니다.",
-                });
+        //     console.log(status);
+        //     if (error) {
+        //         console.log(error);
+        //         toast({
+        //             title: "에러가 발생했습니다.",
+        //             description: "콘솔 창에 출력된 에러를 확인하세요.",
+        //         });
+        //     }
+        //     if (status === 200) {
+        //         toast({
+        //             title: "추가 완료!",
+        //             description: "새로운 TO DO BOARD가 추가 되었습니다.",
+        //         });
 
-                getData();
-            }
-        } else {
-            const { data, error, status } = await supabase.from("todos").insert({ contents: contents }).eq("id", pathname.split("/")[2]).select();
+        //         getData();
+        //     }
+        // } else {
+        //     // const { data, error, status } = await supabase.from("todos").insert({ contents: contents }).eq("id", pathname.split("/")[2]).select();
 
-            console.log(status);
+        //     console.log(status);
 
-            if (error) {
-                console.log(error);
-                toast({
-                    title: "에러가 발생했습니다.",
-                    description: "콘솔 창에 출력된 에러를 확인하세요.",
-                });
-            }
-            if (status === 201) {
-                toast({
-                    title: "생성 완료!",
-                    description: "새로운 TO DO BOARD가 생성 되었습니다.",
-                });
+        //     if (error) {
+        //         console.log(error);
+        //         toast({
+        //             title: "에러가 발생했습니다.",
+        //             description: "콘솔 창에 출력된 에러를 확인하세요.",
+        //         });
+        //     }
+        //     if (status === 201) {
+        //         toast({
+        //             title: "생성 완료!",
+        //             description: "새로운 TO DO BOARD가 생성 되었습니다.",
+        //         });
 
-                getData();
-            }
-        }
+        //         getData();
+        //     }
+        // }
     };
     const createBoard = () => {
         console.log(boards);
@@ -110,21 +110,21 @@ function Page() {
 
     // Supabase에 기존에 생성된 페이지가 있는지 없는지 확인
     const getData = async () => {
-        let { data: todos, error } = await supabase.from("todos").select("*");
-        console.log(todos);
+        // let { data: todos, error } = await supabase.from("todos").select("*");
+        // console.log(todos);
 
-        if (todos !== null) {
-            todos.forEach((item: Todo) => {
-                if (item.id === Number(pathname.split("/")[2])) {
-                    console.log(item);
-                    setBoards(item);
-                }
-            });
-        }
+        // if (todos !== null) {
+        //     todos.forEach((item: Todo) => {
+        //         if (item.id === Number(pathname.split("/")[2])) {
+        //             console.log(item);
+        //             setBoards(item);
+        //         }
+        //     });
+        // }
     };
 
     useEffect(() => {
-        getData();
+        // getData();
     }, []);
 
     return (
