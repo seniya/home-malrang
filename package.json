@@ -8,7 +8,7 @@
     "start": "pnpm --stream -r run dev",
     "dev": "pnpm -r dev",
     "build": "pnpm -r build",
-    "clean": "pnpm -r run clean"
+    "clean": "pnpm -r run clean && rm -rf node_modules"
   },
   "keywords": [],
   "author": "malrang",
