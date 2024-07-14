@@ -1,22 +1,17 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-
-/*
 import { supabase } from "@/utils/supabase";
 import { nanoid } from "nanoid";
-*/
 // COMPONENTS
 import LabelCalendar from "@/components/common/calendar/LabelCalendar";
-// import BasicBoard from "@/components/common/board/BasicBoard";
-
-
+import BasicBoard from "@/components/common/board/BasicBoard";
 // Shadcn UI
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
-// import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 import { ChevronLeft } from "lucide-react";
 // CSS
 import styles from "./page.module.scss";
@@ -43,9 +38,8 @@ function Page() {
     const [boards, setBoards] = useState<Todo>();
     const [startDate, setStartDate] = useState<Date | undefined>(new Date());
     const [endDate, setEndDate] = useState<Date | undefined>(new Date());
-    // const { toast } = useToast();
+    const { toast } = useToast();
 
-    /*
     const insertRowData = async (contents: BoardContent[]) => {
         // Supabase 데이터베이스에 연동
         if (boards?.contents) {
@@ -132,7 +126,6 @@ function Page() {
     useEffect(() => {
         getData();
     }, []);
-    */
 
     return (
         <div className={styles.container}>
@@ -154,11 +147,12 @@ function Page() {
                         <div className={styles.calendarBox__calendar}>
                             {/* 캘린더 UI */}
                             <LabelCalendar label="From" handleDate={setStartDate} />
-                            <LabelCalendar label="To" handleDate={setEndDate} /> 
+                            <LabelCalendar label="To" handleDate={setEndDate} />
                         </div>
                         <Button
                             variant={"outline"}
-                            className="w-[15%] border-orange-500 bg-orange-400 text-white hover:bg-orange-400 hover:text-white"                            
+                            className="w-[15%] border-orange-500 bg-orange-400 text-white hover:bg-orange-400 hover:text-white"
+                            onClick={createBoard}
                         >
                             Add New Board
                         </Button>
@@ -178,9 +172,9 @@ function Page() {
                     </div>
                 ) : (
                     <div className="flex flex-col items-center justify-start w-full h-full gap-4">
-                        {/* {boards?.contents.map((board: BoardContent) => {
+                        {boards?.contents.map((board: BoardContent) => {
                             return <BasicBoard key={board.boardId} />;
-                        })} */}
+                        })}
                     </div>
                 )}
             </main>
