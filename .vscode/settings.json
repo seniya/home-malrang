@@ -2,6 +2,7 @@
   "files.eol": "\n",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "eslint.workingDirectories": [
+    "./home-next", // replace {PATH_TO_CLIENT} with your own path
     {
       "mode": "auto"
     }

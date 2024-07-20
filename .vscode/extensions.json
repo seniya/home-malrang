@@ -1,7 +1,5 @@
 {
   "recommendations": [
-    "Vue.volar", 
-    "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "ritwickdey.liveserver",
     "glenn2223.live-sass"
