@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 // import React from 'react'
 import { Roboto } from 'next/font/google'
 import { Toaster } from '@/components/ui/toaster'
+import GlobalNavigationBar from '@/components/common/global-navigation-bar'
 
 // 전역 CSS
 import '@/styles/globals.css'
@@ -15,15 +16,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="ko">
       <body className={roboto.className}>
-        {/* <SideNavigation /> */}
-        {children}
-        <Toaster />
+        <div className="flex min-h-screen w-full flex-col">
+          <GlobalNavigationBar />
+          <main className="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 bg-muted/40 p-4 md:gap-8 md:p-10">
+            {children}
+          </main>
+          <Toaster />
+        </div>
       </body>
     </html>
   )
