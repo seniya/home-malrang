@@ -1,25 +1,22 @@
-import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
-
-import { Toaster } from "@/components/ui/toaster"
+import type { Metadata } from 'next'
+// import React from 'react'
+import { Roboto } from 'next/font/google'
+import { Toaster } from '@/components/ui/toaster'
 
 // 전역 CSS
-import "@/styles/globals.css";
-import SideNavigation from "@/components/common/navigation/SideNavigation";
+import '@/styles/globals.css'
 
-
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
+const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
 export const metadata: Metadata = {
-  title: "Malrang Home",
-  description: "Malrang Home page",
-};
+  title: 'Malrang Home',
+  description: 'Malrang Home page'
+}
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="ko">
@@ -29,5 +26,5 @@ export default function RootLayout({
         <Toaster />
       </body>
     </html>
-  );
+  )
 }

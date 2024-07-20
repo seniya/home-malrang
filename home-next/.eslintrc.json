@@ -4,7 +4,11 @@
     "node": true,
     "jest": true
   },
-  "extends": ["next/core-web-vitals", "eslint-config-standard", "prettier"],
+  "extends": [
+    "next/core-web-vitals", 
+    "eslint-config-standard",
+    "prettier"
+  ],
   "plugins": ["prettier"],
   "rules": {
     "react/jsx-uses-react": "off",
@@ -14,12 +18,15 @@
       {
         "semi": false,
         "singleQuote": true,
-        "trailingComma": "all",
+        "trailingComma": "none",
         "useTabs": false,
         "tabWidth": 2,
         "printWidth": 80,
         "arrowParens": "always"
       }
     ]
+  },
+  "globals": {
+    "React": false
   }
 }
