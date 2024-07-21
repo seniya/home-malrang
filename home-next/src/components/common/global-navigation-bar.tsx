@@ -19,6 +19,8 @@ import {
   SheetTrigger
 } from '@/components/ui/sheet'
 
+import AuthButton from '@/components/common/auth-button'
+
 export default function GlobalNavigationBar() {
   return (
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
@@ -107,6 +109,8 @@ export default function GlobalNavigationBar() {
             />
           </div>
         </form>
+        <AuthButton />
+        {/* 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="secondary" size="icon" className="rounded-full">
@@ -123,6 +127,7 @@ export default function GlobalNavigationBar() {
             <DropdownMenuItem>Logout</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+        */}
       </div>
     </header>
   )
