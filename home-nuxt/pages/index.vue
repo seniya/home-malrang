@@ -5,5 +5,6 @@
 <template>
   <div>
     index
+    <Button>Click me</Button>
   </div>
 </template>
