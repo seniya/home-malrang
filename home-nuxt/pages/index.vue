@@ -4,8 +4,8 @@
 
 <template>
   <div>
-    <p>index</p>
-    <p>hello</p>
-    <Button>Click me</Button>
+    <p>index2</p>
+    <p>hello2</p>
+    <Button>Click me2</Button>
   </div>
 </template>
