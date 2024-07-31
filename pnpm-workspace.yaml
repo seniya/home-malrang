@@ -1,3 +1,4 @@
 packages:
   #- "home-next"
   - "home-nuxt"
+  - "doc-nuxt"
