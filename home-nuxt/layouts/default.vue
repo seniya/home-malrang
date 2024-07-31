@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Menu, Search, CircleUser, Package2 } from 'lucide-vue-next'
+import { Menu, Search, CircleUser } from 'lucide-vue-next'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 </script>
@@ -8,43 +8,36 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
   <div class="flex min-h-screen w-full flex-col">
     <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
       <nav class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-        <a
-          href="#"
-          class="flex items-center gap-2 text-lg font-semibold md:text-base"
-        >
-          <!-- --><Package2 class="h-6 w-6" />
-          <span class="sr-only">Acme Inc</span>
-        </a>
-        <a
-          href="#"
+        <NuxtLink
+          to="/"
           class="text-muted-foreground transition-colors hover:text-foreground"
         >
-          Dashboard
-        </a>
-        <a
-          href="#"
+          Main
+        </NuxtLink>
+        <NuxtLink
+          to="/article"
           class="text-muted-foreground transition-colors hover:text-foreground"
         >
-          Orders
-        </a>
-        <a
-          href="#"
+          Aticle
+        </NuxtLink>
+        <NuxtLink
+          to="/project"
           class="text-muted-foreground transition-colors hover:text-foreground"
         >
-          Products
-        </a>
-        <a
-          href="#"
+          Project
+        </NuxtLink>
+        <NuxtLink
+          to="/about"
           class="text-muted-foreground transition-colors hover:text-foreground"
         >
-          Customers
-        </a>
-        <a
-          href="#"
-          class="text-foreground transition-colors hover:text-foreground"
+          About
+        </NuxtLink>
+        <NuxtLink
+          to="/setting"
+          class="text-muted-foreground transition-colors hover:text-foreground"
         >
-          Settings
-        </a>
+          Setting
+        </NuxtLink>
       </nav>
       <Sheet>
         <SheetTrigger as-child>
@@ -59,43 +52,36 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
         </SheetTrigger>
         <SheetContent side="left">
           <nav class="grid gap-6 text-lg font-medium">
-            <a
-              href="#"
-              class="flex items-center gap-2 text-lg font-semibold"
-            >
-              <!-- <Package2 class="h-6 w-6" /> -->
-              <span class="sr-only">Acme Inc</span>
-            </a>
-            <a
-              href="#"
+            <NuxtLink
+              to="/"
               class="text-muted-foreground hover:text-foreground"
             >
-              Dashboard
-            </a>
-            <a
-              href="#"
+              Main
+            </NuxtLink>
+            <NuxtLink
+              to="/aticle"
               class="text-muted-foreground hover:text-foreground"
             >
-              Orders
-            </a>
-            <a
-              href="#"
+              Aticle
+            </NuxtLink>
+            <NuxtLink
+              to="/project"
               class="text-muted-foreground hover:text-foreground"
             >
-              Products
-            </a>
-            <a
-              href="#"
+              Project
+            </NuxtLink>
+            <NuxtLink
+              to="/about"
               class="text-muted-foreground hover:text-foreground"
             >
-              Customers
-            </a>
-            <a
-              href="#"
-              class="hover:text-foreground"
+              About
+            </NuxtLink>
+            <NuxtLink
+              to="/setting"
+              class="text-muted-foreground hover:text-foreground"
             >
-              Settings
-            </a>
+              Setting
+            </NuxtLink>
           </nav>
         </SheetContent>
       </Sheet>
