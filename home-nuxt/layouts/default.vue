@@ -27,6 +27,12 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
           Project
         </NuxtLink>
         <NuxtLink
+          to="/docs"
+          class="text-muted-foreground hover:text-foreground"
+        >
+          docs
+        </NuxtLink>
+        <NuxtLink
           to="/about"
           class="text-muted-foreground transition-colors hover:text-foreground"
         >
@@ -69,6 +75,12 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
               class="text-muted-foreground hover:text-foreground"
             >
               Project
+            </NuxtLink>
+            <NuxtLink
+              to="/docs"
+              class="text-muted-foreground hover:text-foreground"
+            >
+              docs
             </NuxtLink>
             <NuxtLink
               to="/about"
