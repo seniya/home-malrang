@@ -1,7 +1,5 @@
 {
   "recommendations": [
-    "eamodio.gitlens",
-    "ritwickdey.liveserver",
-    "glenn2223.live-sass"
+    "eamodio.gitlens"
   ]
 }

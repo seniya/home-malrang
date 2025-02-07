@@ -1,16 +1,19 @@
 {
-  "name": "main-repo",
+  "name": "confy-app",
   "version": "1.0.0",
-  "description": "Basic template for a monorepo",
+  "private": true,
   "scripts": {
-    "packages": "pnpm --filter",
-    "app": "pnpm packages main-app",
-    "start": "pnpm --stream -r run dev",
-    "dev": "pnpm -r dev",
-    "build": "pnpm -r build",
-    "clean": "pnpm -r run clean && rm -rf node_modules"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean --parallel && rm -rf node_modules"
   },
-  "keywords": [],
-  "author": "malrang",
-  "license": "ISC"
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "pnpm": ">=10.2.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@10.2.1"
 }
