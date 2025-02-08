@@ -1,0 +1,18 @@
+import { Steps } from 'nextra/components'
+import { Sandpack } from '@codesandbox/sandpack-react'
+import { freeCodeCampDark } from '@codesandbox/sandpack-themes'
+
+export const files = {
+  '/App.tsx': 
+`
+export default function App() {
+  return <h1>Hello Sandpack11</h1>
+}
+`
+}
+  
+# Hello
+
+## Quick Start with Sandpack
+
+<Sandpack template='vite-react-ts' theme={freeCodeCampDark} files={files} />

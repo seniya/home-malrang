@@ -1,5 +1,6 @@
 export default {
-  page1: 'page1',
-  page2: 'page2',
-  page3: 'page3'
+  'describing-the-ui': 'Describing the UI',
+  'adding-interactivity': 'Adding Interactivity',
+  'managing-state': 'anaging State',
+  'escape-hatches': 'Escape Hatches'
 }
