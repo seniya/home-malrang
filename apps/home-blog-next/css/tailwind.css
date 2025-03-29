@@ -8,34 +8,35 @@
 @theme {
   /* Font families */
   --font-sans:
-    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif,
+    var(--font-space-grotesk), 'Courier New', 'Courier', monospace,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  /* Colors */
-  /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
-  --color-primary-50: oklch(0.971 0.014 343.198);
-  --color-primary-100: oklch(0.948 0.028 342.258);
-  --color-primary-200: oklch(0.899 0.061 343.231);
-  --color-primary-300: oklch(0.823 0.12 346.018);
-  --color-primary-400: oklch(0.718 0.202 349.761);
-  --color-primary-500: oklch(0.656 0.241 354.308);
-  --color-primary-600: oklch(0.592 0.249 0.584);
-  --color-primary-700: oklch(0.525 0.223 3.958);
-  --color-primary-800: oklch(0.459 0.187 3.815);
-  --color-primary-900: oklch(0.408 0.153 2.432);
-  --color-primary-950: oklch(0.284 0.109 3.907);
+  /* Colors - Retro palette */
+  /* Amber/orange tones for primary colors */
+  --color-primary-50: oklch(0.971 0.05 60);
+  --color-primary-100: oklch(0.948 0.08 62);
+  --color-primary-200: oklch(0.899 0.11 65);
+  --color-primary-300: oklch(0.823 0.15 68);
+  --color-primary-400: oklch(0.718 0.19 70);
+  --color-primary-500: oklch(0.656 0.22 72);
+  --color-primary-600: oklch(0.592 0.25 74);
+  --color-primary-700: oklch(0.525 0.22 76);
+  --color-primary-800: oklch(0.459 0.19 78);
+  --color-primary-900: oklch(0.408 0.15 80);
+  --color-primary-950: oklch(0.284 0.1 82);
 
-  --color-gray-50: oklch(0.985 0.002 247.839);
-  --color-gray-100: oklch(0.967 0.003 264.542);
-  --color-gray-200: oklch(0.928 0.006 264.531);
-  --color-gray-300: oklch(0.872 0.01 258.338);
-  --color-gray-400: oklch(0.707 0.022 261.325);
-  --color-gray-500: oklch(0.551 0.027 264.364);
-  --color-gray-600: oklch(0.446 0.03 256.802);
-  --color-gray-700: oklch(0.373 0.034 259.733);
-  --color-gray-800: oklch(0.278 0.033 256.848);
-  --color-gray-900: oklch(0.21 0.034 264.665);
-  --color-gray-950: oklch(0.13 0.028 261.692);
+  /* Green-tinted grays for retro terminal feel */
+  --color-gray-50: oklch(0.985 0.002 140);
+  --color-gray-100: oklch(0.967 0.003 142);
+  --color-gray-200: oklch(0.928 0.006 144);
+  --color-gray-300: oklch(0.872 0.01 146);
+  --color-gray-400: oklch(0.707 0.022 148);
+  --color-gray-500: oklch(0.551 0.027 150);
+  --color-gray-600: oklch(0.446 0.03 152);
+  --color-gray-700: oklch(0.373 0.034 154);
+  --color-gray-800: oklch(0.278 0.033 156);
+  --color-gray-900: oklch(0.21 0.034 158);
+  --color-gray-950: oklch(0.13 0.028 160);
 
   /* Line heights */
   --line-height-11: 2.75rem;
@@ -77,44 +78,153 @@
     border-radius: var(--radius-sm);
     outline-color: var(--color-primary-500);
   }
+
+  /* 레트로 폰트 설정 */
+  body {
+    letter-spacing: 0.5px;
+    font-family: var(--font-sans);
+  }
+
+  /* 레트로 효과를 위한 노이즈 오버레이 */
+  html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEDklEQVRoQ+2ZW3LbMAxFwZ1kJ91Ju5J2Jd1Ju5PYnRVYPAiABPUMx5V/OhqNI1t8HPwAoOTs7e3to13b29vb7T+X7cyyPxir+6ov+F7Pm8bnYb5TV89lv687a/OMz9xnGtv/s+fx+fy8D4zWarXHV8+vvj/JEdTGUMeAI+gCJLpGcASoAK7yA74/4x9XKKHgDAwA1vVnzxMQIZcIiKJ+BSadI+hHRDw1iKLDwsT3IZXP8VllBQWwgVHgOyhH5AJS0rkCJNQVrAq2qgICJNJZqCVa/S+NmKKbUBM0NxIVkJTOQrpxDwgKe2ByHFLUJGqnB0TUolH5GHFVa4TOAiK6KBMK6ILGQcspSg4YEjNFxUMtVIMIjFArptZM6AHRmsFrYlV0sRpDMgqJB7+daDlGADFZnW+VZqZoBVqCJmrZtZvBLEyoOlplRdGZxZCPAAmAoJE/rnwvyYSXRyNyAhvADlLYn+u+oAC0qJXoLLHWiBcttD4SUuJDVZ5EsEVnRmcOiwmIqlhZBWRVtLw1guQUtDcimQmUEmZCcmoxEwnUiMasmmwk5Gwk6WRg+TmtHVUr1ohNNELKADkDxDM2MmHaUa3RRX4rWvFIBRBIZb6nVpJIzYbLNK+qRmwxIp2+kkJVOpnlVaETQrGcIjZVOg29hWbClHCTtGEk5i1lhZXH1WVG1l+cakQzQZ8Vk4P2WESrwGg/IjAGImrlZJK1ItJZagQ7K4hWRmc8rWCBp1Z47XyZsbrxu9YIVaqAgC60xlA9GZ2PNJJq5EiNzOmsVyM6d6qzJjXsNOxzJswKJhTViNHOTLQ8rRi1DI0n0XqaRuZ05pQaBN1IxMAYQD+iEWGD1RQ/tVYMDVyNxJTRVLQyU4/akTrbpgyP0sik00hkpdGCrpLOmrRiIGaRSlKIoxrxCpitWpGZz/ZQDJBpxwOSn6mRTmdVOqE2mmcRaNUaESp5oSXMI9mjWlGNPFQjOVrp6v1oJsxW0Yrr3Dq3Wd5QDWP3kEotjfQaUY34NcJpRPcjFgF3kgEp4mUvA0QioF67Eqq4jSg10u1HorQx0XqYRtIWtdqPyDnuRIxCsZTqDjWjDRGrqqxjQKoaMWcbZLZQ6wG74XEaMTXiGfb6C9V1QiM64yVN2KRnIHo0ShrBREP9SNTV7g6OpiG7Q6l0GiYbOo3YU1oTNWLDoVmhjjyU9jSCzWt8P4qUMhxnRyeddbRiqr13tFF9pUZMrUxq6SodHtvVfmRFOLJU8nTRa2SSq12NPFWt6KE0A6bPrz2aVpGxNaJ9/MnGcD3e8A62tR9Bb31Mx/qMCR/j/RZ3n839jB9S+AexBrBPt3OmIwAAAABJRU5ErkJggg==');
+    opacity: 0.03;
+    z-index: 9999;
+  }
+
+  /* CRT 라인 효과 */
+  .dark body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    z-index: 9998;
+  }
 }
 
 @layer utilities {
   .prose {
     & a {
-      color: var(--color-primary-500);
+      color: var(--color-primary-600);
+      text-decoration: underline;
+      text-decoration-style: dotted;
       &:hover {
-        color: var(--color-primary-600);
+        color: var(--color-primary-700);
+        text-decoration-style: solid;
       }
       & code {
-        color: var(--color-primary-400);
+        color: var(--color-primary-500);
       }
     }
     & :where(h1, h2) {
       font-weight: 700;
       letter-spacing: var(--tracking-tight);
+      border-bottom: 2px solid var(--color-primary-200);
+      padding-bottom: 0.25rem;
     }
     & h3 {
       font-weight: 600;
+      border-bottom: 1px solid var(--color-primary-100);
+      padding-bottom: 0.2rem;
     }
     & :where(code):not(pre code) {
-      color: var(--color-indigo-500);
+      color: var(--color-primary-700);
+      background-color: var(--color-gray-100);
+      padding: 0.1rem 0.3rem;
+      border-radius: 0.2rem;
+    }
+    & pre {
+      border: 1px solid var(--color-primary-200);
     }
   }
 
   .prose-invert {
     & a {
-      color: var(--color-primary-500);
+      color: var(--color-primary-400);
       &:hover {
-        color: var(--color-primary-400);
+        color: var(--color-primary-300);
       }
       & code {
-        color: var(--color-primary-400);
+        color: var(--color-primary-300);
       }
     }
     & :where(h1, h2, h3, h4, h5, h6) {
       color: var(--color-gray-100);
     }
+    & pre {
+      border: 1px solid var(--color-primary-800);
+    }
+  }
+
+  /* 레트로 버튼 스타일 */
+  .retro-button {
+    background-color: var(--color-gray-200);
+    border: 1px solid var(--color-gray-400);
+    box-shadow: 2px 2px 0px var(--color-gray-500);
+    transition: all 0.1s ease;
+  }
+
+  .retro-button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px var(--color-gray-500);
+  }
+
+  .retro-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+  /* 레트로 링크 스타일 */
+  .retro-link {
+    position: relative;
+    color: var(--color-primary-600);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    padding: 0 2px;
+    break-words: break-word;
+  }
+
+  .retro-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-primary-500);
+    transition: width 0.3s ease;
+  }
+
+  .retro-link:hover {
+    color: var(--color-primary-700);
+  }
+
+  .retro-link:hover::after {
+    width: 100%;
+  }
+
+  /* 레트로 폰트 클래스 */
+  .retro-font {
+    letter-spacing: 0.5px;
+    font-variant-numeric: tabular-nums;
   }
 }
 

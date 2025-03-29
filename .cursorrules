@@ -6,6 +6,7 @@
     ### build and run
     - use pnpm
     - use node v22
+    - MonoRepo (pnpm-workspace.yaml 참고)
 
     ### Code Style and Structure
     - Write concise, technical TypeScript code with accurate examples.

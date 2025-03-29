@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Malrang Blog',
   author: 'Malrang',
   headerTitle: 'Blog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: '기록하자',
   language: 'ko-kr',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.malrang.net',
