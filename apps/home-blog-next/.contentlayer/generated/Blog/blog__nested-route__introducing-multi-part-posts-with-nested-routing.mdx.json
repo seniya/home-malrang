@@ -59,7 +59,7 @@
     "datePublished": "2021-05-02T00:00:00.000Z",
     "dateModified": "2021-05-02T00:00:00.000Z",
     "description": "The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!",
-    "image": "/static/images/twitter-card.png",
+    "image": "/static/images/logo.png",
     "url": "https://www.malrang.net/blog/nested-route/introducing-multi-part-posts-with-nested-routing"
   }
 }

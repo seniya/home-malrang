@@ -61,7 +61,7 @@
     "datePublished": "2020-11-11T00:00:00.000Z",
     "dateModified": "2020-11-11T00:00:00.000Z",
     "description": "In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.",
-    "image": "/static/images/twitter-card.png",
+    "image": "/static/images/logo.png",
     "url": "https://www.malrang.net/blog/guide-to-using-images-in-nextjs"
   }
 }
