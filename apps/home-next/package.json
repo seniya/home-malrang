@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "postbuild": "next-sitemap && pagefind --site .next/server/app --output-path public/_pagefind",
-    "start": "next start -p 3333",
-    "lint": "next lint",
-    "clean": "rm -rf node_modules && rm -rf .next"
+    "_dev": "next dev --turbopack",
+    "_build": "next build",
+    "_postbuild": "next-sitemap && pagefind --site .next/server/app --output-path public/_pagefind",
+    "_start": "next start -p 3333",
+    "_lint": "next lint",
+    "_clean": "rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.19.11",

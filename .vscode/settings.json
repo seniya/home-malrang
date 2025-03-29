@@ -1,6 +1,5 @@
 {
   "files.eol": "\n",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "editor.codeActionsOnSave": [
     "editor.formatOnSave",
@@ -16,5 +15,8 @@
   "editor.formatOnSave": true,
 
   "editor.tabSize": 2,
-  "editor.wordWrapColumn": 100
+  "editor.wordWrapColumn": 100,
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
