@@ -3,7 +3,7 @@
     <channel>
       <title>Malrang Blog</title>
       <link>https://www.malrang.net/blog</link>
-      <description>A blog created with Next.js and Tailwind.css</description>
+      <description>기록하자</description>
       <language>ko-kr</language>
       <managingEditor>seniya2@gmail.com (Malrang)</managingEditor>
       <webMaster>seniya2@gmail.com (Malrang)</webMaster>
