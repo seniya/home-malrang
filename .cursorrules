@@ -3,6 +3,10 @@
     ### Objective
     - Create a Next.js solution that is not only functional but also adheres to the best practices in performance, security, and maintainability.
 
+    ### build and run
+    - use pnpm
+    - use node v22
+
     ### Code Style and Structure
     - Write concise, technical TypeScript code with accurate examples.
     - Use functional and declarative programming patterns; avoid classes.
