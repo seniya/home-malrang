@@ -61,11 +61,11 @@ export default [
       ],
       'react/prop-types': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-require-imports': 'off',
       'react/no-unescaped-entities': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-var-requires': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',
-      'css.lint.unknownAtRules': 'off',
       'import/no-anonymous-default-export': 'off'
     }
   }
