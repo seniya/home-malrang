@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://www.malrang.net',
   siteRepo: 'https://github.com/seniya/home-malrang',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'seniya2@gmail.com',
   github: 'https://github.com/seniya',
