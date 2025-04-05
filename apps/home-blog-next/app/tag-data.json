@@ -1,5 +1,7 @@
 {
-  "typescript": 2,
+  "typescript": 4,
+  "tensorflow": 1,
+  "tensorflowjs": 1,
   "next-js": 6,
   "tailwind": 3,
   "guide": 5,

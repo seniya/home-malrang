@@ -1,0 +1,54 @@
+{
+  "title": "TensorFlow.js 시작하기",
+  "date": "2025-03-28T15:00:00.000Z",
+  "tags": [
+    "tensorflow",
+    "tensorflowjs"
+  ],
+  "lastmod": "2025-03-29T00:00:00.000Z",
+  "draft": false,
+  "summary": "이 문서는 TensorFlow.js 시작하기(공식)의 내용을 다시 정리한 문서입니다. 개인적인 학습 내용을 정리하기 위해 작성되었습니다.",
+  "images": [
+    "/static/images/seo-card/learn-tensorflow.png"
+  ],
+  "layout": "PostSimple",
+  "body": {
+    "raw": "\n## Introduction\n\n이 문서는 [TensorFlow.js 시작하기](https://www.tensorflow.org/js)(공식)의 내용을 다시 정리한 문서입니다.\n개인적인 학습 내용을 정리하기 위해 작성되었습니다.\n",
+    "code": "var Component=(()=>{var m=Object.create;var o=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,u=Object.prototype.hasOwnProperty;var g=(n,t)=>()=>(t||n((t={exports:{}}).exports,t),t.exports),x=(n,t)=>{for(var a in t)o(n,a,{get:t[a],enumerable:!0})},l=(n,t,a,r)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let s of w(t))!u.call(n,s)&&s!==a&&o(n,s,{get:()=>t[s],enumerable:!(r=p(t,s))||r.enumerable});return n};var j=(n,t,a)=>(a=n!=null?m(f(n)):{},l(t||!n||!n.__esModule?o(a,\"default\",{value:n,enumerable:!0}):a,n)),_=n=>l(o({},\"__esModule\",{value:!0}),n);var c=g((y,i)=>{i.exports=_jsx_runtime});var F={};x(F,{default:()=>h,frontmatter:()=>v});var e=j(c()),v={title:\"TensorFlow.js \\uC2DC\\uC791\\uD558\\uAE30\",date:\"2025-03-29 \",lastmod:\"2025-03-29\",tags:[\"tensorflow\",\"tensorflowjs\"],draft:!1,summary:\"\\uC774 \\uBB38\\uC11C\\uB294 TensorFlow.js \\uC2DC\\uC791\\uD558\\uAE30(\\uACF5\\uC2DD)\\uC758 \\uB0B4\\uC6A9\\uC744 \\uB2E4\\uC2DC \\uC815\\uB9AC\\uD55C \\uBB38\\uC11C\\uC785\\uB2C8\\uB2E4. \\uAC1C\\uC778\\uC801\\uC778 \\uD559\\uC2B5 \\uB0B4\\uC6A9\\uC744 \\uC815\\uB9AC\\uD558\\uAE30 \\uC704\\uD574 \\uC791\\uC131\\uB418\\uC5C8\\uC2B5\\uB2C8\\uB2E4.\",images:[\"/static/images/seo-card/learn-tensorflow.png\"],layout:\"PostSimple\"};function d(n){let t={a:\"a\",h2:\"h2\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",...n.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(t.h2,{className:\"content-header\",id:\"introduction\",children:[(0,e.jsx)(t.a,{href:\"#introduction\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,e.jsx)(e.Fragment,{children:(0,e.jsx)(t.span,{className:\"content-header-link\",children:(0,e.jsxs)(t.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,e.jsx)(t.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,e.jsx)(t.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Introduction\"]}),(0,e.jsxs)(t.p,{children:[\"\\uC774 \\uBB38\\uC11C\\uB294 \",(0,e.jsx)(t.a,{href:\"https://www.tensorflow.org/js\",children:\"TensorFlow.js \\uC2DC\\uC791\\uD558\\uAE30\"}),\"(\\uACF5\\uC2DD)\\uC758 \\uB0B4\\uC6A9\\uC744 \\uB2E4\\uC2DC \\uC815\\uB9AC\\uD55C \\uBB38\\uC11C\\uC785\\uB2C8\\uB2E4. \\uAC1C\\uC778\\uC801\\uC778 \\uD559\\uC2B5 \\uB0B4\\uC6A9\\uC744 \\uC815\\uB9AC\\uD558\\uAE30 \\uC704\\uD574 \\uC791\\uC131\\uB418\\uC5C8\\uC2B5\\uB2C8\\uB2E4.\"]})]})}function h(n={}){let{wrapper:t}=n.components||{};return t?(0,e.jsx)(t,{...n,children:(0,e.jsx)(d,{...n})}):d(n)}return _(F);})();\n;return Component;"
+  },
+  "_id": "blog/learn-tensorflowjs/0001-tutorials-2d-data-predict.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/learn-tensorflowjs/0001-tutorials-2d-data-predict.mdx",
+    "sourceFileName": "0001-tutorials-2d-data-predict.mdx",
+    "sourceFileDir": "blog/learn-tensorflowjs",
+    "contentType": "mdx",
+    "flattenedPath": "blog/learn-tensorflowjs/0001-tutorials-2d-data-predict"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.25,
+    "time": 15000,
+    "words": 50
+  },
+  "slug": "learn-tensorflowjs/0001-tutorials-2d-data-predict",
+  "path": "blog/learn-tensorflowjs/0001-tutorials-2d-data-predict",
+  "filePath": "blog/learn-tensorflowjs/0001-tutorials-2d-data-predict.mdx",
+  "toc": [
+    {
+      "value": "Introduction",
+      "url": "#introduction",
+      "depth": 2
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "TensorFlow.js 시작하기",
+    "datePublished": "2025-03-28T15:00:00.000Z",
+    "dateModified": "2025-03-29T00:00:00.000Z",
+    "description": "이 문서는 TensorFlow.js 시작하기(공식)의 내용을 다시 정리한 문서입니다. 개인적인 학습 내용을 정리하기 위해 작성되었습니다.",
+    "image": "/static/images/seo-card/learn-tensorflow.png",
+    "url": "https://www.malrang.net/blog/learn-tensorflowjs/0001-tutorials-2d-data-predict"
+  }
+}
